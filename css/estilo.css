@@ -206,6 +206,69 @@ footer ul li{
 } 
     
 
+@media screen and (max-width: 480px){
+    .padre{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9 1fr);
+        gap: 2px;
+        grid-template-areas:
+        "header"
+        "article"
+        "footer" 
+    }
+    .header{
+        grid-area: header;
+    }
+    .article{
+        
+        grid-area: article;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        gap: 2px;
+        grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "footer"
+    }
+    .header{
+        grid-area: header;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        grid-area: section1;
+    }
+
+
+    
+    
+  
+
+ 
 
 
 
