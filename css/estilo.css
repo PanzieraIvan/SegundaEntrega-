@@ -31,11 +31,11 @@ h1{
 }
 h2{
     font-family: 'Grenze Gotisch', cursive;
-    background-color: #525252ad;
+    background-color: #1a1a1aad;
     padding: 2px;
     margin: 20px auto;
     color: #fff2f2;
-    border: solid hsla(0, 0%, 0%, 0.842);
+    border: solid hsla(0, 0%, 0%, 0.603);
     border-radius: 30px;
     display: inline-block; 
     
@@ -45,42 +45,20 @@ header  {
     text-align: center;
     margin: 20px;
 }
-p, video, img{
+p{
     border: 3px solid hsla(0, 0%, 0%, 0.842);
     border-radius: 20px ;
 }
+video{
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.videoindex{
+    width: 400px;
+}
 
 
-
-.menu{
-    background-color: hsla(0, 0%, 0%, 0.842);    
-    list-style-type: none;
-    padding: 0 20px;
-    width: 90%;
-    margin: 20px auto; 
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   
-}
-.menu .item{
-    display: inline-block;
-    font-size: 2rem;
-    padding: auto;
-}
-.menu .item a{
-    text-decoration: none;
-    color: #fff2f2;
-    display: inline-block;
-    padding: 20px;
-    font-weight: bolder;
-}
-.menu .item a:hover{
-    background-color: #525252;
-    border-radius: 30% ;
-    
-}
 section p{
     background-color: #ffffffaf;
 }
@@ -182,20 +160,6 @@ section p{
 
 
 
-form{
-    background-color:#ffffffaf ;
-    border: solid ;
-    margin: 0 auto;
-    padding: 10px;
-    width: 900px;
-    font-size: 2rem;
-    border: solid hsla(0, 0%, 0%, 0.842) 3px;
-    border-radius: 5%;
-}
-input{
-    margin: 10px;
-    padding: 10px;
-}
 
 
 

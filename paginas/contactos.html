@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Homenaje&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
+   
     <link rel="icon" href="../img/logo0.ico">
     <title>Sur Coast</title>
 </head>
@@ -17,16 +20,37 @@
   
           <h1>Sur Coast</h1>
   
-          <nav>
-            <ul class="menu">
-                <li class="item"> <a href="../index.html">Inicio</a> </li>
-                <li class="item"> <a href="./remeras.html"> Remeras</a></li>
-                <li class="item"> <a href="./buzos.html"> Buzos</a></li>
-                <li class="item"><a href="./galeria.html"> Galeria</a> </li>
-                <li class="item"> <a href="./nosotros.htm"> Nosotros</a></li>
-                <li class="item"> <a href="./contactos.html"> Contactos</a></li>
-            </ul>
-        </nav>
+          <nav class="navbar navbar-expand-lg text-light bg-secondary bg-gradient">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.htm">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactos.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./galeria.html">GALERIA</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./remeras.html">Remeras</a></li>
+                      <li><a class="dropdown-item" href="./buzos.html">Buzos</a></li>                     
+                    </ul>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
   
       </header>
       <article>
@@ -34,49 +58,36 @@
       </article>
 
     <main>
-        <form action="">
-            <fieldset>
-                <legend><h4>Haznos tu consulta</h4></legend>
-
-            <div>
-                <label for="nanme">Escribre tu nombre:</label>
-                <input type="text" name="name" placeholder="Ricardo" required>
-            </div>
-            <div>
-                <label for="apellido">Escribe tu apellido:</label>
-                <input type="text" name="apellido" placeholder="DelMonte" required>
-            </div>
-            <div>
-                <label for="sexo">Elige tu genero:</label>
-                <input type="radio" name="sexo" value="var">Hmbre
-                <input type="radio" name="sexo" value="muj">Mujer
-                <input type="radio" name="sexo" value="otro">Otro
-
-            </div>
-            
-            
-            <div>
-                <label for="email"> Escribe tu email:</label>
-                <input type="emial" name="email" required placeholder="nombre@...com">
-            </div>
-            <div>
-                <label for="comentrarios">Escribe tu consulta:</label>
-                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Escribe aqui..."></textarea>
-            </div>
-            <div>
-                <label for="terminos">Acepta los terminos</label>
-                <input type="checkbox" name="terminos" value="1" required>
-            </div>
-            
-            
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borar datos">
-            </div>
+        <div class="formulario">
+            <div class="form-floating p-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Nombre</label>
+              </div>
+              <div class="form-floating p-2" >
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Apellido</label>
+              </div>
+              <select class="form-select" aria-label="Default select example p-2">
+                <option selected>Genero</option>
+                <option value="1">Masculino</option>
+                <option value="2">Mujer</option>
+                <option value="3">Otro</option>
+              </select>
+              <form class="form-floating p-2">
+                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@...com" value="name@...com">
+                <label for="floatingInputValue">Email</label>
+              </form>
+              <div class="form-floating p-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Consulta</label>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto p-2">
+                <button class="btn btn-primary" type="button">Enviar</button>
+                
+              </div>
+              
         
-            </fieldset>
-
-        </form>
+        </div>
     </main>
 
     <footer>
@@ -102,6 +113,9 @@
            <li class="pie2">Derechos reservados SurCoast</li>
         </ul>
       </footer> 
+
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
 </body>
 
 
