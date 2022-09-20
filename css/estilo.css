@@ -212,7 +212,7 @@ footer ul li{
         justify-items: center;
         align-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9 1fr);
+        grid-template-rows: repeat(3 1fr);
         gap: 2px;
         grid-template-areas:
         "header"
@@ -232,64 +232,37 @@ footer ul li{
 }
 
 @media screen and (max-width: 480px){
-    .container{
+    .padre2{
         display: grid;
         justify-items: center;
         align-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6 1fr);
+        grid-template-rows: repeat(3 1fr);
         gap: 2px;
         grid-template-areas:
         "header"
-        "section1"
-        "section2"
-        "section3"
-        "section4"
-        "footer"
+        "article"
+        "footer" 
     }
     .header{
         grid-area: header;
     }
-    .section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .article{
+        
+        grid-area: article;
     }
-    .p1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        grid-area: section1;
+    .footer{
+        grid-area: footer;
+
     }
 
+
+
+}
 
     
     
   
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
